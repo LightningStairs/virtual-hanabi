@@ -1,9 +1,9 @@
 import React from 'react';
 
-const FakeStuff = () => {
+const App = () => {
   return(
     <h1>Testing!</h1>
   )
 }
 
-export default FakeStuff;
+export default App;

@@ -1,13 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
-import FakeStuff from '../src/FakeStuff';
+import App from '../src/App';
 
 describe('an enzyme test', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(<FakeStuff />)
+    wrapper = mount(<App />)
   });
 
   it('should pass', () => {
@@ -22,4 +22,7 @@ describe('an enzyme test', () => {
   it('should use jasmine-enzyme matchers', () => {
     expect(wrapper.find('h1')).toBePresent();
   });
+  it('should pass', () => {
+    expect(wrapper.find('h1').text()).toEqual("Testing!")
+  })
 });
