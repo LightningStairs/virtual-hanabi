@@ -6,3 +6,6 @@ My coworkers and I love to play [Hanabi](https://boardgamegeek.com/boardgame/987
 * Back End: Rails API
 
 * Front End: React
+
+
+[ ![Codeship Status for LightningStairs/virtual-hanabi](https://app.codeship.com/projects/09e97de0-7d23-0135-5647-765793fef5b3/status?branch=master)](https://app.codeship.com/projects/245803)
