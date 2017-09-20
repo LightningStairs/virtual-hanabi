@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem "font-awesome-rails"
 gem "foundation-rails"
+gem "omniauth-facebook"
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
