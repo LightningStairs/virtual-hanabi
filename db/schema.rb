@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 20170916181634) do
   enable_extension "plpgsql"
 
   create_table "users", force: :cascade do |t|
-    t.string "provider"
-    t.string "uid"
+    t.string "email"
+    t.datetime "last_signed_in_at"
     t.string "name"
-    t.string "oauth_token"
-    t.string "avatar_url"
-    t.datetime "oauth_expires_at"
+    t.string "oauth_uid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_users_on_name", unique: true
+    t.index ["oauth_uid"], name: "index_users_on_oauth_uid", unique: true
   end
 
 end
